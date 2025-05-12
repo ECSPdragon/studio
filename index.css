@@ -69,13 +69,45 @@ p.top-left{
 }
 .studio-about h1{
     font-family: "JUSTsans";
-    font-size: 1.4vw;
+    font-size: 24px;
     color: white;
-    line-height: 4vh;
+    line-height: 28px;
 }
 .studio-about p{
     font-family: "JUSTsans";
-    font-size: 1.2vw;
+    font-size: 18px;
     color: white;
-    line-height: 4vh;
+    line-height: 28px;
+}
+.studio-line-division{
+    border-top: 3px dashed #bbb;
+    border-bottom: 0px dashed;
+    border-left: 0px dashed;
+    border-right: 0px dashed;
+    width: 80vw;
+}
+.studio-values-div{
+    text-align: center;
+    font-family: "JUSTsans";
+    color: white;
+    
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    
+    max-width: 80vw;
+}
+.studio-values-list{
+    max-width: 60vw;
+    text-align: left;
+}
+.studio-values-list h2{
+    font-family: "monaspace";
+    font-size: 48px;
+    margin-bottom: -10px;
+}
+.studio-values-list p{
+    font-family: "JUSTsans";
+    color: white;
 }
