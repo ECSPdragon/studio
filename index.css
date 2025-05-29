@@ -164,6 +164,19 @@ p.top-left{
     color: white;
     text-align: center;
 }
+.studio-projects-flex {
+    margin: auto;
+}
+.studio-projects-game {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row;
+    width: 50%;
+}
+.studio-projects-game img {
+    width: 50%;
+}
 
 #team-ecsp {
     background-image: url(assets/team_ecsp_background.png);
@@ -179,4 +192,43 @@ p.top-left{
     background-image: url(assets/team_planity_background.png);
     background-repeat:no-repeat;
     background-size: cover;
+}
+
+@media only screen and (max-width: 720px){
+    
+    .studio-team-member {
+        width: 80%;
+        padding-bottom: 60px;
+        margin-bottom: 20px;
+    }
+    .studio-projects h1{
+        font-size: 60px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .studio-about h1{
+        font-size: 60px;
+        max-width: 80%;
+        line-height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .studio-team-flex{
+        display: block;
+    }
+    .studio-team-member p {
+        font-size: 20px;
+    }
+    .studio-team-member a {
+        color: white;
+        margin-top: 90px;
+        font-size: 30px;
+    }
+    .studio-team-member h2 {
+        font-size: 40px;
+    }
+    .studio-team-member h4 {
+        font-size: 24px;
+    }
 }
