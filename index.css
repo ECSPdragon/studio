@@ -143,9 +143,9 @@ p.top-left{
 }
 .studio-about p{
     font-family: "JUSTsans";
-    font-size: 18px;
+    font-size: 22px;
     color: white;
-    line-height: 28px;
+    line-height: 35px;
 }
 .studio-line-division{
     border-top: 3px dashed #bbb;
@@ -249,7 +249,6 @@ p.top-left{
     align-content: center;
     flex-flow: row;
     margin-bottom: 40px;
-    width: 50%;
 }
 .studio-projects-game img {
     object-fit: contain;
@@ -258,7 +257,7 @@ p.top-left{
 }
 .studio-projects-game p {
     min-width: 20vw;
-    font-size: 20px;
+    font-size: 22px;
     color: white;
     font-family: "JUSTsans";
 }
@@ -302,19 +301,38 @@ footer a{
     color: white;
 }
 
-@media only screen and (max-width: 720px){
+
+
+
+
+
+
+
+
+
+
+/* VERTICAL LAYOUT */
+/* VERTICAL LAYOUT */
+/* VERTICAL LAYOUT */
+
+@media only screen and (orientation: portrait){
     
-    .studio-team-member {
-        width: 80%;
-        padding-bottom: 60px;
-        margin-bottom: 20px;
-    }
-    .studio-projects h1{
-        font-size: 60px;
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    .studio-banner h1{
+        display: inline;
+
+        font-family: "JUSTsans";
+
+        max-width: 50%;
+        font-size: 11vw;
+        line-height: 11vw;
+
+        margin-top: auto;
+        margin-bottom: auto;
+
+        color: white;
+    }   
+    
+    /* About */
     .studio-about h1{
         font-size: 60px;
         max-width: 80%;
@@ -322,8 +340,37 @@ footer a{
         margin-left: auto;
         margin-right: auto;
     }
+    .studio-about span{
+        font-size: 60px;
+        max-width: 80%;
+        line-height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Values */
+    .studio-values-div h1{
+        font-size: 60px;
+        max-width: 80%;
+        line-height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+    .studio-values-list p{
+        font-size: 22px;
+        line-height: 1.7;
+    }
+    
+    /* Team */
     .studio-team-flex{
         display: block;
+    }
+    .studio-team-member {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        padding-bottom: 60px;
+        margin-bottom: 20px;
     }
     .studio-team-member p {
         font-size: 20px;
@@ -339,4 +386,36 @@ footer a{
     .studio-team-member h4 {
         font-size: 24px;
     }
+    
+    /* Projects */
+    .studio-projects-flex {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .studio-projects h1{
+        font-size: 60px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .studio-projects-game img {
+        width: 40vw;
+        margin-right: 10px;
+    }
+    .studio-projects-game p {
+        width: 40vw;
+        font-size: 20px;
+    }
+    
+    
+    /* Footer */
+    footer{
+        height: 400px;
+    }
+    .footer-list{
+        font-size: 30px;
+        line-height: 60px;
+    }
+    
 }
