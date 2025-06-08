@@ -46,6 +46,19 @@ p.top-left{
     border-radius: 20px;
 }
 
+/* Language selector */
+.lang {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 32px;
+    bottom: 16px;
+    width: 50px;
+    height: 25px;
+    scale: 2;
+}
+
 @keyframes color-cycle-bg {
     0% {
         background-color: hsl(0, 47%, 55%);
@@ -107,7 +120,7 @@ p.top-left{
     display: flex;
     justify-content: center;
     
-    background-image: url("assets/background_repeat.png");
+    background-image: url("../assets/background_repeat.png");
     background-size: 960px;
     background-repeat: repeat;
     animation: background-cycle 31s linear infinite;
@@ -266,17 +279,17 @@ p.top-left{
 }
 
 #team-ecsp {
-    background-image: url(assets/team_ecsp_background.png);
+    background-image: url(../assets/team_ecsp_background.png);
     background-repeat:no-repeat;
     background-size: cover;
 }
 #team-kohara {
-    background-image: url(assets/team_kohara_background.png);
+    background-image: url(../assets/team_kohara_background.png);
     background-repeat:no-repeat;
     background-size: cover;
 }
 #team-planity {
-    background-image: url(assets/team_planity_background.png);
+    background-image: url(../assets/team_planity_background.png);
     background-repeat:no-repeat;
     background-size: cover;
 }
@@ -316,6 +329,14 @@ footer a{
 /* VERTICAL LAYOUT */
 
 @media only screen and (orientation: portrait){
+    
+    .lang {
+        left: 64px;
+        bottom: 32px;
+        width: 50px;
+        height: 25px;
+        scale: 3;
+    }
     
     .studio-banner h1{
         display: inline;
